@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 /**
- *main - entrypoint
+ * main - entrypoint
  * Return: always 0 (success)
  */
 int main(void)
-{	char ch = 'a';
+{	int n;
+	char ch;
 
-	while (ch <= 'z')
+	for (n = 48; n < 58; n++)
 	{
-		if (ch != 'e' && ch != 'q')
+		putchar(n);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
 	{
 		putchar(ch);
-	}
-	ch++;
 	}
 	putchar('\n');
 	return (0);
